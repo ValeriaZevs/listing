@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\assets",
+    "\\markup",
+    "\\react-listing",
+    "\\react-listing\\public",
+    "\\react-listing\\src",
+    "\\react-listing\\src\\components",
+    "\\react-listing\\src\\data",
+    "\\src"
+  ],
+  "SelectedNode": "\\react-listing\\src\\index.tsx",
+  "PreviewInSolutionExplorer": false
+}
