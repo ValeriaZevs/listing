@@ -1,9 +1,5 @@
 ﻿import React from 'react';
 
-interface MainImage {
-  url_570xN: string;
-}
-
 export interface Item {
   listing_id: number;
   state: string;
@@ -12,7 +8,9 @@ export interface Item {
   currency_code?: string;
   price?: string;
   quantity?: number;
-  MainImage?: MainImage;
+  MainImage?: {
+    url_570xN: string;
+  };
   is_digital?: boolean;
 }
 
@@ -50,7 +48,6 @@ const Listing: React.FC<ListingProps> = ({ items = [] }) => {
   return (
     <div className="product-grid">
       {items.map((item) => {
-        // Пропускаем удаленные товары или те, у которых нет картинки
         if (item.state === 'removed' || !item.MainImage) return null;
 
         return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Listing, { Item } from './components/Listing';
+import Listing, { type Item } from './components/Listing'; 
 import data from './data/etsy.json';
 import './App.css';
 
